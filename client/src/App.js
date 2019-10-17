@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Notifier from './components/Notifier';
+import ClCamera from './components/ClCamera';
 
 class App extends Component {
   constructor() {
@@ -36,6 +37,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="Cloudinary Logo" />
             <h1 className="App-title">CloudyCam</h1>
           </header>
+          <ClCamera offline={this.state.offline} />
         </div>
     );
   }
